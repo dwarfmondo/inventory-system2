@@ -1,0 +1,18 @@
+<li>
+  <div class="table">
+    <div class="table-cell">
+      <%= link_to product.name, product_path(product) %>
+    </div>
+    <div class="table-cell">
+      <span class="quantity">
+        <%= product.quantity %>
+      </span>
+      <%= link_to raw('&ndash;'), take_product_path(product), 'data-decrement-quantity' => '', class: 'button round small' %>
+    </div>
+  </div>
+  <% if product.description.present? %>
+    <%= product.description %>
+    <br />
+  <% end %>
+  <%= link_to 'Edit', edit_product_path(product) %>
+</li>

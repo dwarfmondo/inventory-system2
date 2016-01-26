@@ -1,0 +1,13 @@
+<p>
+  <%= link_to 'New Product', new_product_path, class: 'button new' %>
+</p>
+
+<ul id="products" class="list">
+  <%= render @products %>
+</ul>
+
+<script>
+  $(document).ready(function(){
+    products.init();
+  });
+</script>

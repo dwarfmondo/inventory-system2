@@ -1,0 +1,150 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ body {
+  background: #fefefe;
+  font-size: 16px;
+  font-family: 'lato', 'Helvetica-Nueue', Helvetica, sans-serif;
+  color: #333;
+  padding: 40px;
+ }
+
+ p,
+ ul,
+ li {
+  line-height: 1.5;
+ }
+
+ ul,
+ p {
+  margin: 0 0 20px 0;
+ }
+
+ a {
+  color: #369;
+ }
+
+ .left {
+  float: left;
+ }
+
+ .right {
+  float: right;
+ }
+
+ .small {
+  font-size: 11px;
+ }
+
+ .table {
+  display: table;
+ }
+
+ .table .table-cell {
+  display: table-cell;
+  vertical-align: center;
+ }
+
+ .table .table-cell + .table-cell {
+  padding-left: 20px;
+ }
+
+ ul.list {
+  padding: 0;
+  list-style: none;
+ }
+
+ ul.list > li {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+ }
+
+ ul.list > li:last-child {
+  margin-bottom: 0;
+ }
+
+ a.button,
+ *[type="submit"] {
+  display: inline-block;
+  padding: 0 10px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 13px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #369;
+  color: #fff;
+  border-radius: 3px;
+  border: 0;
+  outline: none;
+ }
+
+ a.button.cancel {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  height: 30px;
+  line-height: 30px;
+  color: #666;
+ }
+
+ .button.new {
+  background-color: #27ae60;
+ }
+
+ .button.round {
+  padding: 0;
+  width: 32px;
+  border-radius: 100%;
+ }
+
+ .button.round.small {
+  height: 18px;
+  line-height: 18px;
+  width: 18px;
+ }
+
+ .button + .button,
+ *[type="submit"] + .button {
+  margin-left: 7px;
+ }
+
+ fieldset {
+  padding: 0;
+  margin: 0 0 20px 0;
+  border: 0;
+ }
+
+ fieldset + fieldset {
+  margin-top: -10px;
+ }
+
+ fieldset > label {
+  display: block;
+  margin-bottom: 10px;
+  color: #666;
+  font-weight: bold;
+  font-size: 11px;
+  text-transform: uppercase;
+ }
+
+ input[type="text"],
+ textarea {
+  padding: 3px 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #fff;
+ }

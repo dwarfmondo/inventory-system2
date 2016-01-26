@@ -1,0 +1,7 @@
+<%= form_for @product do |f| %>
+  <%= render 'form', f: f %>
+  <p>
+    <%= f.submit 'Save Changes' %>
+    <%= link_to 'Cancel', product_path(@product), class: 'button cancel' %>
+  </p>
+<% end %>
